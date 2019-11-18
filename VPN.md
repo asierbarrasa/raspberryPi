@@ -82,7 +82,7 @@ static ip_address=192.168.0.9
 static routers=192.168.0.1
 static domain_name_servers=192.168.0.1`
 
-![image-20191117214315692](C:\Users\Asier\AppData\Roaming\Typora\typora-user-images\image-20191117214315692.png)
+![1](https://user-images.githubusercontent.com/13755501/69046885-46a65000-09fa-11ea-9a18-302de644e05b.png)
 
 ## DHCP <a name="id8"></a>  
 
@@ -93,14 +93,15 @@ en la 192.168.0.10.
 
 > Los menús de configuración pueden variar dependiendo del modelo y la marca del router.
 
-![image-20191117214330962](C:\Users\Asier\AppData\Roaming\Typora\typora-user-images\image-20191117214330962.png)	
+![2](https://user-images.githubusercontent.com/13755501/69046886-46a65000-09fa-11ea-87f4-0a97ce446db5.png)	
 
 # Redirección de puertos   <a name="id9"></a>  
 
 En mi caso, está en el apartado del router “Agregar Servidor Virtual”.
 1194, es el puerto que establece OpenVPN por defecto, dejaremos este, aunque se puede cambiar.
 
-![image-20191117214350744](C:\Users\Asier\AppData\Roaming\Typora\typora-user-images\image-20191117214350744.png)
+![3](https://user-images.githubusercontent.com/13755501/69046888-473ee680-09fa-11ea-8da8-a69cb95045a4.png)
+![4](https://user-images.githubusercontent.com/13755501/69046889-473ee680-09fa-11ea-857f-17442270fc03.png)
 
 ## DDNS (Acceso desde el exterior) <a name="id10"></a>  
 
@@ -122,7 +123,7 @@ sudo make install`
 
 
 
-![image-20191117214401330](C:\Users\Asier\AppData\Roaming\Typora\typora-user-images\image-20191117214401330.png)
+![5](https://user-images.githubusercontent.com/13755501/69046890-473ee680-09fa-11ea-8a6b-247b20dbdfe2.png)
 
 Hacemos que se inicie de forma automática al iniciar la raspberry.
 Tras añadir noip2 a la carpeta `init.d`, lo añadimos a `update-rc.d`, que contiene los scripts que se
@@ -142,7 +143,7 @@ sudo /usr/local/bin/noip2`
 `wget https://git.io/vpn -O openvpn-install.sh
 sudo bash openvpn-install.sh`
 
-![image-20191117214409975](C:\Users\Asier\AppData\Roaming\Typora\typora-user-images\image-20191117214409975.png)	
+![6](https://user-images.githubusercontent.com/13755501/69046891-47d77d00-09fa-11ea-81d7-d754d657bd24.png)
 
 La **configuración** es muy sencilla, tan solo hay que:
 1. Elegir la *dirección IP* que hayamos configurado previamente como estática, en nuestro
@@ -181,11 +182,9 @@ Ya solo nos queda conectarnos.
 
 
 
-![image-20191117214419729](C:\Users\Asier\AppData\Roaming\Typora\typora-user-images\image-20191117214419729.png)
-
-![image-20191117214433499](C:\Users\Asier\AppData\Roaming\Typora\typora-user-images\image-20191117214433499.png)
-
-![image-20191117214438856](C:\Users\Asier\AppData\Roaming\Typora\typora-user-images\image-20191117214438856.png)
+![7](https://user-images.githubusercontent.com/13755501/69046892-47d77d00-09fa-11ea-9f18-06b6d64a8cba.png)
+![8](https://user-images.githubusercontent.com/13755501/69046893-48701380-09fa-11ea-8ebf-959e16c69b0f.png)
+![9](https://user-images.githubusercontent.com/13755501/69046894-48701380-09fa-11ea-9201-96e5c7ee6c4e.png)
 
 # Conclusiones <a name="id14"></a>  
 
